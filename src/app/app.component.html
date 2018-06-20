@@ -1,0 +1,22 @@
+<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+    <div>{{appTitle}}</div>
+    <div>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon>list</mat-icon>
+                List view
+            </button>
+            <button mat-menu-item>
+                <mat-icon>playlist_add</mat-icon>
+                Add new
+            </button>
+        </mat-menu>
+    </div>
+</mat-toolbar>
+<mat-card>
+    <app-post-list></app-post-list>
+</mat-card>

@@ -1,0 +1,10 @@
+span {
+    display: flex;
+    flex:1 1 0;
+}
+
+
+mat-card {
+    max-width: 980px;
+    margin: 20px auto 0;
+}
